@@ -1,10 +1,8 @@
 # Class 7 Gut Check: Jenkins + Terraform + S3 Webhook Lab
 
-This project demonstrates a Jenkins pipeline that is triggered by a GitHub webhook and uses Terraform to deploy AWS infrastructure. The pipeline creates an S3 bucket, uploads project files and screenshots, and optionally destroys the resources at the end of the run.
+This is a Jenkins pipeline that is triggered by a GitHub webhook and uses Terraform to deploy AWS infrastructure. The pipeline creates an S3 bucket, uploads project screenshots proving my capability of creating a Jenkins pipeline to Github.
 
 ## Project Goals
-
-This lab is designed to prove that:
 
 - GitHub can trigger Jenkins automatically through a webhook
 - Jenkins can pull a repository from GitHub
@@ -13,7 +11,6 @@ This lab is designed to prove that:
 - Terraform can create an S3 bucket in AWS
 - Terraform can upload screenshots and project files into that bucket
 - Uploaded files can be made publicly accessible
-- Infrastructure can optionally be destroyed after testing
 
 ## Repository Contents
 
