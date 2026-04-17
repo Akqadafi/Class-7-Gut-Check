@@ -1,18 +1,27 @@
-# New Jenkins server test with terraform deployment and triggers
+# Class 7 Gut Check: Jenkins + Terraform + S3 Webhook Lab
 
-## Jenkinsfile
+This is a Jenkins pipeline that is triggered by a GitHub webhook and uses Terraform to deploy AWS infrastructure. The pipeline creates an S3 bucket, uploads project screenshots proving my capability of creating a Jenkins pipeline to Github.
 
-A simple declarative Jenkinsfile
-- Clones git repo 
-- Binds AWS IAM user creds in terraform stages with AWS Creds plugin
-- Stages for terraform init and apply 
-- Destroy stage using user input 
+## Project Goals
 
-## Terraform script 
-- A simple AWS S3 bucket is deployed
-- State file is stored in S3 backend 
-- S3 bucket name uniqueness is guranteed 
+- GitHub can trigger Jenkins automatically through a webhook
+- Jenkins can pull a repository from GitHub
+- Jenkins can run Terraform successfully
+- Terraform can use an S3 backend for state storage
+- Terraform can create an S3 bucket in AWS
+- Terraform can upload screenshots and project files into that bucket
+- Uploaded files can be made publicly accessible
 
-## User data
-EC2 startup script to bootstrap Jenkins server
+## Repository Contents
+
+```text
+.
+├── Jenkinsfile
+├── test-bucket.tf
+├── user-data.sh
+├── plugins.yaml
+├── trigger.md
+├── armageddon.md
+├── Screenshots/
+└── README.md
 
